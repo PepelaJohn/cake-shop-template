@@ -1,6 +1,7 @@
 // components/Layout.tsx
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
+import { webname } from '@/constants';
 
 interface LayoutProps {
   children: ReactNode;
@@ -11,7 +12,7 @@ export const Layout = ({ children}: LayoutProps) => {
   return (
     <div>
       <Head>
-        <title>Winnie&apos;s Pastries - Handmade pastries in the heart of Nairobi.</title>
+        <title>{webname} - Handmade pastries in the heart of Nairobi.</title>
         
         <meta name="description" content="Handmade pastries for every occasion" />
         <meta charSet="utf-8" />

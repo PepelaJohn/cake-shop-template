@@ -1,4 +1,5 @@
 'use client'
+import { webname } from '@/constants';
 import Link from 'next/link';
 // pages/index.tsx
 import React, { useState } from 'react';
@@ -196,7 +197,7 @@ export default function Home() {
           <h2 className="text-center text-2xl font-bold mb-8">CORPORATE CELEBRATIONS</h2>
           
           <p className="text-center mb-8 max-w-3xl mx-auto">
-            Perfect for corporate occasions? Everyone loves cake and, what is Winnie&apos;s Pastries? Corporate Account, you can always rely on exactly what&apos;s available anytime looking with your team onboard.
+            Perfect for corporate occasions? Everyone loves cake and, what is {webname}? Corporate Account, you can always rely on exactly what&apos;s available anytime looking with your team onboard.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -306,11 +307,11 @@ export default function Home() {
             <h3 className="text-center text-2xl font-bold mb-8">OF THE ACTION!</h3>
             
             <p className="text-center mb-8">
-              Join our mailing list for the latest baking news, Winnie&apos;s pastries updates, and more.
+              Join our mailing list for the latest baking news, {webname} updates, and more.
             </p>
             
             <p className="text-center text-sm mb-8">
-              By entering your email address here you are consenting to opt into the Winnie&apos;s Pastries United mailing list and your personal details in accordance with our Data Privacy Policy.
+              By entering your email address here you are consenting to opt into the {webname} United mailing list and your personal details in accordance with our Data Privacy Policy.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
@@ -330,8 +331,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-light mb-4">LIFE IS SWEET</h2>
-            <div className="text-lg">
-              Winnie&apos;s pastries
+            <div className="text-lg uppercase">
+              {webname}
             </div>
             <div className="text-xs">
               BAKING SINCE 2020 • ESTABLISHED IN KENYA
@@ -433,7 +434,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-8 text-sm">
-            <p>© 2025 Winnie&apos;s Pastries • All Rights Reserved</p>
+            <p>© 2025 {webname} • All Rights Reserved</p>
           </div>
         </div>
       </footer>
